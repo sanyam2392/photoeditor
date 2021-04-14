@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <nav class="navbar navbar-dark bg-info mb-5">
+        <div class="container">
+          <a href="#" class="navbar-brand">   Photo Editor    -  "Give wings to your imaginations and Create whatever you can imagine!"</a>
+        </div>
+      </nav>
+      <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 m-auto">
+            <div class="custom-file mb-3">
+              <input type="file" class="custom-file-input" id="upload-file">
+              <label for="upload-file" class="custom-file-label">Choose Image</label>
+            </div>
+            <canvas id="canvas"></canvas>
+      
+            
+      
+            <h4 class="text-center my-3">Effects</h4>
+      
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <button class="filter-btn vintage-add btn btn-dark btn-block">
+                    Vintage
+                  </button>
+              </div>
+              <div class="col-md-3">
+                <button class="filter-btn lomo-add btn btn-dark btn-block">
+                    Lomo
+                  </button>
+              </div>
+              <div class="col-md-3">
+                <button class="filter-btn clarity-add btn btn-dark btn-block">
+                    Clarity
+                  </button>
+              </div>
+              <div class="col-md-3">
+                <button class="filter-btn sincity-add btn btn-dark btn-block">
+                    Sin City
+                  </button>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-md-3">
+                <button class="filter-btn crossprocess-add btn btn-dark btn-block">
+                    Cross Process
+                  </button>
+              </div>
+              <div class="col-md-3">
+                <button class="filter-btn pinhole-add btn btn-dark btn-block">
+                    Pinhole
+                  </button>
+              </div>
+              <div class="col-md-3">
+                <button class="filter-btn nostalgia-add btn btn-dark btn-block">
+                    Nostalgia
+                  </button>
+              </div>
+              <div class="col-md-3">
+                <button class="filter-btn hermajesty-add btn btn-dark btn-block">
+                    Her Majesty
+                  </button>
+              </div>
+            </div>
+      
+            <div class="row mt-5">
+              <div class="col-md-6">
+                <button id="download-btn" class="btn btn-primary btn-block">Download Image</button>
+              </div>
+              <div class="col-md-6">
+                <button id="revert-btn" class="btn btn-danger btn-block">Remove Filters</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+     
+<div class="sliders">
+    <form id="imageEditor">
+      <h4 class="text-center my-3">Filters</h4>
+      <p>
+        <label for="gs">Grayscale</label>
+        <input id="gs" name="gs" type="range" min="0" max="100" value="0">
+      </p>
+  
+      <p>
+        <label for="blur">Blur</label>
+        <input id="blur" name="blur" type="range" min="0" max="10" value="0">
+      </p>
+  
+      <p>
+        <label for="br">Exposure</label>
+        <input id="br" name="br" type="range" min="0" max="200" value="100">
+      </p>
+  
+      <p>
+        <label for="ct">Contrast</label>
+        <input id="ct" name="ct" type="range" min="0" max="200" value="100">
+      </p>
+  
+      <p>
+        <label for="huer">Hue Rotate</label>
+        <input id="huer" name="huer" type="range" min="0" max="360" value="0">
+      </p>
+  
+      <p>
+        <label for="opacity">Opacity</label>
+        <input id="opacity" name="opacity" type="range" min="0" max="100" value="100">
+      </p>
+  
+      <p>
+        <label for="invert">Invert</label>
+        <input id="invert" name="invert" type="range" min="0" max="100" value="0">
+      </p>
+  
+      <p>
+        <label for="saturate">Saturate</label>
+        <input id="saturate" name="saturate" type="range" min="0" max="500" value="100">
+      </p>
+  
+      <p>
+        <label for="sepia">Sepia</label>
+        <input id="sepia" name="sepia" type="range" min="0" max="100" value="0">
+      </p>
+  
+      <input type="reset" form="imageEditor" id="reset" value="Reset" />
+  
+    </form>
+  </div>	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA==" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+</body>
+</html>
